@@ -1,0 +1,32 @@
+{
+    "name": "chess",
+    "description": "Ce projet consiste à déployer une application web de jeu d'échecs jouable en multijoueur.",
+    "version": "1.0.0",
+    "main": "build/main.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "ts-node-dev --respawn --transpileOnly ./src/main/ts/main.ts",
+        "serve": "tsc && node ./build/main.js",
+        "test": "./node_modules/.bin/alsatian ./src/test/ts/*.spec.ts || true"
+    },
+    "keywords": [],
+    "author": "Gerson Sunyé",
+    "license": "MIT",
+    "dependencies": {
+        "@types/express": "^4.16.1",
+        "body-parser": "^1.18.3",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "ts-node": "^8.0.2",
+        "ts-node-dev": "^1.0.0-pre.32",
+        "typescript": "^3.3.3"
+    },
+    "devDependencies": {
+        "alsatian": "^3.2.1",
+        "typescript": "^3.7.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@gitlab.univ-nantes.fr:naomod/idl/projet-2019.git"
+    }
+}
